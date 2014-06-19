@@ -1,0 +1,25 @@
+{
+  "name": "danmarc2-string",
+  "version": "0.1.0",
+  "description": "Converts DanMARC2 string to Unicode",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saebekassebil/danmarc2-string.git"
+  },
+  "keywords": [
+    "danmarc2",
+    "unicode",
+    "translate"
+  ],
+  "author": {
+    "name": "Jakob Miland",
+    "email": "saebekassebil@gmail.com",
+    "url": "http://saebekassebil.me"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/saebekassebil/danmarc2-string"
+}
