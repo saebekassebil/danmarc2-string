@@ -10,5 +10,18 @@ test('Simple strings', function(t) {
   ];
 
   t.plan(strings.length);
-  strings.forEach(function(str) { t.equal(dm2(str), str); })
+  strings.forEach(function(str) { t.equal(dm2(str), str) })
+});
+
+test('Specially handled strings', function(t) {
+  var strings = {
+    'mail@@example.com': 'mail@example.com',
+    'M@00e9nade': 'Ménade',
+    '@å @Å @* @¤ @@': '\ua733 \ua732 * ¤ @',
+  };
+
+  var keys = Object.keys(strings);
+  t.plan(keys.length);
+
+  keys.forEach(function(key) { t.equal(dm2(key), strings[key]) });
 });
